@@ -15,6 +15,7 @@
         <logback.version>1.2.3</logback.version>
         <javax.annotanion-api.version>1.3.2</javax.annotanion-api.version>
         <java.version>11</java.version>
+        <servelet-api.version>4.0.1</servelet-api.version>
     </properties>
 
     <dependencies>
@@ -36,13 +37,19 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
             <version>${javax.annotanion-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servelet-api.version}</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>
