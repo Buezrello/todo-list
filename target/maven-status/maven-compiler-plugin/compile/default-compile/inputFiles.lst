@@ -1,3 +1,12 @@
-/Users/igindin/JavaLearning/Spring5Learning/todolist/src/main/java/igor/learning/controller/DemoController.java
-/Users/igindin/JavaLearning/Spring5Learning/todolist/src/main/java/igor/learning/config/WebAppInitializer.java
-/Users/igindin/JavaLearning/Spring5Learning/todolist/src/main/java/igor/learning/config/WebConfig.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\controller\TodoItemController.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\controller\DemoController.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\service\DemoServiceImpl.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\util\ViewNames.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\service\IDemoService.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\util\Mappings.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\config\WebConfig.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\service\ITodoItemService.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\model\TodoData.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\model\TodoItem.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\config\WebAppInitializer.java
+F:\JetBrains\IdeaProjects\spring-5-projects\todo-list\src\main\java\igor\learning\service\TodoItemServiceImpl.java
