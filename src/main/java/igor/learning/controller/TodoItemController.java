@@ -39,8 +39,15 @@ public class TodoItemController {
     }
 
     @GetMapping(Mappings.ADD_ITEM)
-    public String addEditItem(Model model) {
-        TodoItem todoItem = new TodoItem("", "", LocalDate.now());
+    public String addEditItem(@RequestParam(required = false, defaultValue = "-1") int id,
+                              Model model) {
+        log.info("editing Item with id {}", id);
+        TodoItem todoItem = todoItemService.getItem(id);
+
+        if (todoItem == null) {
+            todoItem = new TodoItem("", "", LocalDate.now());
+        }
+
         model.addAttribute(AttributeNames.TODO_ITEM, todoItem);
         return ViewNames.ADD_ITEM;
     }
@@ -48,7 +55,13 @@ public class TodoItemController {
     @PostMapping(Mappings.ADD_ITEM)
     public String processItem(@ModelAttribute(AttributeNames.TODO_ITEM) TodoItem todoItem) {
         log.info("todoItem from form {}", todoItem);
-        todoItemService.addItem(todoItem);
+
+        if (todoItem.getId() == 0) {
+            todoItemService.addItem(todoItem);
+        } else {
+            todoItemService.updateItem(todoItem);
+        }
+
         return "redirect:/" + Mappings.ITEMS;
     }
 
